@@ -5,9 +5,8 @@ window.onload = function () {           // onload wrapper
 // let imageArray = []
 function loadImages () {
     let image = document.createElement('img')
-    cl(typeof(image))
-    image.src = '/image1.jpg'
-    document.getElementById('imageContainer').appendChild(image)
+    image.src = './images/image1.jpg'
+    document.getElementById('container').appendChild(image)
 }
 loadImages()
 
