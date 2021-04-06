@@ -2,13 +2,16 @@ const cl = console.log;
 
 window.onload = function () {           // onload wrapper
 
-// let imageArray = []
-function loadImages () {
-    let image = document.createElement('img')
-    image.src = './images/image1.jpg'
-    document.getElementById('container').appendChild(image)
+function loadImages () {        // hust get em in there
+    for (i = 0; i <4; ++i) {
+        image = document.createElement('img')
+        image.src = './images/image1.jpg'
+        imageArray[i] = image
+        document.getElementById('container').appendChild(image)
+    }
 }
 loadImages()
+
 
 // const carouselSlide = document.querySelector('.carousel-slide')
 // const carouselImages = document.querySelectorAll('.carousel-slide img')
