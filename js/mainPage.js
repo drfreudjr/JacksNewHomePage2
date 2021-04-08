@@ -4,9 +4,11 @@ window.onload = function () {           // onload wrapper
 
 function loadImages () {        // hust get em in there
     for (i = 0; i <4; ++i) {
+        let imageString = `image${i}.jpg`
+        cl(imageString)
         image = document.createElement('img')
         image.src = './images/image1.jpg'
-        imageArray[i] = image
+        // imageArray[i] = image
         document.getElementById('container').appendChild(image)
     }
 }
